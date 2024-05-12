@@ -1,12 +1,12 @@
 # POT-Creation-Date-Updater
 
-This is a Python script to automatically update `POT-Creation-Date` of `messages.po` while translating for Bluesky app with `VS code`.
+This is a Python script to automatically update `PO-Revision-Date` of `messages.po` while translating for Bluesky app with `VS code`.
 
 ## How to use
 
-1. Clone and copy `POT-Creation-Date-Updater.py` any where you like.
+1. Clone and copy `PO-Revision-Date-Updater.py` any where you like.
 
-2. Edit `update_pot_creation_date()` to match your condition.
+2. Edit `update_po_revision_date()` to match your condition.
 
 3. In `VS code` you need [`Run on save`](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension.
 
@@ -19,7 +19,7 @@ This is a Python script to automatically update `POT-Creation-Date` of `messages
         
             {
                 "match": "your-translation-language\\\\messages.po",
-                "cmd": "exec(open('path/to/POT-Creation-Date-Updater.py').read())"
+                "cmd": "exec(open('path/to/PO-Revision-Date-Updater.py').read())"
             }
         ]
     }
