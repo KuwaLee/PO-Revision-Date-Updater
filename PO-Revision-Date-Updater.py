@@ -19,7 +19,6 @@ def update_po_revision_date(file_path, timezone='UTC'):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(new_content)
 
-# Usage Example
-# Assuming your PO file path is ‘path/to/your/messages.po’
-# and you want to set the time zone to ‘Asia/Taipei’.
-update_po_revision_date('path/to/your/messages.po', 'Asia/Taipei')
+
+# Call the function with the provided arguments
+update_po_revision_date(file_path, timezone)
