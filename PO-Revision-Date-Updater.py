@@ -14,7 +14,7 @@ def update_po_revision_date(file_path, timezone='UTC'):
     # Update "PO-Revision-Date" time stamp.
     new_content = re.sub(r'PO-Revision-Date:.+\\n', formatted_date, content)
 
-    # 將更新後的內容寫回檔案
+    # Write back to file
     
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(new_content)
