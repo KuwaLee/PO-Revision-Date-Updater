@@ -1,4 +1,4 @@
-# POT-Creation-Date-Updater
+# PO-Revision-Date-Updater
 
 This is a Python script to automatically update `PO-Revision-Date` of `messages.po` while translating for Bluesky app with `VS code`.
 
