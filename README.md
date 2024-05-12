@@ -23,7 +23,9 @@ This is a Python script to automatically update `PO-Revision-Date` of `messages.
 ```
 
 > [!NOTE]
->  `timezone`, For example will be like `Asia/Taipei`
->  You can add multiple rules by adding objects to commands
+>
+>  - `timezone`, For example will be like `Asia/Taipei`.
+>
+>  - You can add multiple rules by adding objects to commands.
 
 4. Enjoy!
