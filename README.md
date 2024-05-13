@@ -15,8 +15,8 @@ This is a Python script to automatically update `PO-Revision-Date` of `messages.
         "shell":"path/to/python.exe",
         "commands": [
             {
-                "match": "your-translation-language\\\\messages.po",
-                "cmd": "exec(open('path/to/PO-Revision-Date-Updater.py').read(), {'file_path': 'path/to/messages.po', 'timezone': 'Your/Timezone'}))"
+                "match": "regex",
+                "cmd": "exec(open('path/to/PO-Revision-Date-Updater.py').read(), {'file_path': r'${file}', 'timezone': 'Your/Timezone'}))"
             }
         ]
     }
@@ -24,8 +24,12 @@ This is a Python script to automatically update `PO-Revision-Date` of `messages.
 
 > [!NOTE]
 >
->  - `timezone`, For example will be like `Asia/Taipei`.
+> - `regex` rule can be like `bluesky-social-app.+zh-TW.+messages.po`, `zh-TW.+messages.po`, `zh-TW\\\\messages.po`, `messages.po`.
 >
->  - You can add multiple rules by adding objects to `commands`.
+> - `${file}` or `r'${file}'` can be replace by absolute path.
+>
+> - `timezone`, For example can be like `Asia/Taipei`.
+>
+> - You can add multiple rules by adding objects to `commands`.
 
 4. Enjoy!
