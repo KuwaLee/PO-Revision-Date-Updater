@@ -30,6 +30,6 @@ This is a Python script to automatically update `PO-Revision-Date` of `messages.
 >
 > - `timezone`, For example can be like `Asia/Taipei`.
 >
-> - Can be used with any case that editing .po, if `"Report-Msgid-Bugs-To: \n"` presents.
+> - Can be used with any case while editing .po, if `"Report-Msgid-Bugs-To: \n"` presents.
 
 4. Enjoy!
