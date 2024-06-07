@@ -16,7 +16,7 @@ This is a Python script to automatically update `PO-Revision-Date` of `messages.
         "commands": [
             {
                 "match": ".po",
-                "cmd": "exec(open('path/to/PO-Revision-Date-Updater.py').read(), {'file_path': r'${file}', 'timezone': 'Your/Timezone'}))"
+                "cmd": "exec(open('path/to/PO-Revision-Date-Updater.py').read(), {'file_path': r'${file}', 'timezone': 'Your/Timezone'})"
             }
         ]
     }
