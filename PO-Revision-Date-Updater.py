@@ -22,7 +22,7 @@ def update_po_revision_date(file_path, timezone='UTC'):
 
     # Write back to file
     
-    with open(file_path, 'w', encoding='utf-8') as file:
+    with open(file_path, 'w', encoding='utf-8', newline='\n') as file:
         file.write(new_content)
 
 
